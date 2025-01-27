@@ -8,12 +8,12 @@ const port = 3000
 app.use(cors());
 app.use(express.json());;
 
-app.get('/', (req, res) => {
+app.get('https://karamatisyntax.github.io/ESports/', (req, res) => {
   if(req.query.user == undefined || req.query.id == undefined){
-    res.sendFile('signup.html', {root: __dirname})
+    res.sendFile('signup.html', {root: 'https://karamatisyntax.github.io/ESports/'})
   }
   else{
-    res.sendFile('Lndex.html', {root: __dirname});
+    res.sendFile('Lndex.html', {root: 'https://karamatisyntax.github.io/ESports/'});
   }
 })
 let data = fs.readFileSync("./user.json");
@@ -24,7 +24,7 @@ function userExists(username) {
     return myObject.some(user => user.username == username);
 }
 
-app.post('/signup', (req, res) => {
+app.post('https://karamatisyntax.github.io/ESports/signup', (req, res) => {
     const inputValue = req.body
     const usernameToCheck = inputValue.username;
 
@@ -50,7 +50,7 @@ app.post('/signup', (req, res) => {
     }
 });
 
-app.post('/login', (req, res) => {
+app.post('https://karamatisyntax.github.io/ESports/login', (req, res) => {
     const inputValue = req.body
     const usernameToCheck = inputValue.username;
 
