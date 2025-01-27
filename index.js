@@ -55,7 +55,7 @@ app.post('/login', (req, res) => {
     const usernameToCheck = inputValue.username;
 
     if (userExists(usernameToCheck)) {
-      if( myObject.some(user => user.password == inputValue.password)){
+      if( myObject.some(user => use.password == inputValue.password)){
         res.send(`Welcome player!! ${inputValue.username}`);
       }else{
         res.send("worng password!!")
