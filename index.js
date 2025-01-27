@@ -8,12 +8,12 @@ const port = 3000
 app.use(cors());
 app.use(express.json());;
 
-app.get('https://karamatisyntax.github.io/ESports/', (req, res) => {
+app.get('https://karamatisyntax.github.io/ESports/index.js', (req, res) => {
   if(req.query.user == undefined || req.query.id == undefined){
     res.sendFile('signup.html', {root: 'https://karamatisyntax.github.io/ESports/'})
   }
   else{
-    res.sendFile('Lndex.html', {root: 'https://karamatisyntax.github.io/ESports/'});
+    res.sendFile('index.html', {root: 'https://karamatisyntax.github.io/ESports/'});
   }
 })
 let data = fs.readFileSync("./user.json");
