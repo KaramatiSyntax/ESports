@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>login</title>
+</head>
+<body>
+  <section> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> 
+
+   <div class="signin">  
+    <div class="content"> 
+      <h2>Sign In</h2> 
+      
+      <div class="form">
+        <div class="inputBox"> 
+          <input id="username" type="text" required> 
+          <i>Username</i> 
+        </div>
+      
+        <div class="inputBox"> 
+          <input id="password" type="password" required> 
+          <i>Password</i> 
+          <img src="Assets/eye.png" alt="hide">
+        </div> 
+      
+      <div class="links">
+        <a href="#">Forgot Password</a> 
+        <a href="/signup.html">Signup</a> 
+      </div>
+      
+      <div class="inputBox"> 
+        <p></p>
+        <input onclick="Submit()" type="submit" value="Login"> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </section> <!-- partial --> 
+
+  <script>
+    let passwordFeild = document.getElementById("password");
+    let hider = document.querySelector(".inputBox img") 
+    
+    hider.onclick = function(){
+      if(hider.alt == "hide"){
+          hider.src = "Assets/view.png";
+          hider.alt = "unhide"
+          passwordFeild.type = "text";
+      }else{
+          hider.src = "Assets/eye.png";
+          hider.alt = "hide"
+          passwordFeild.type = "password";
+      }
+    }
+    
+    function Submit() {
+    let error = document.querySelector(".inputBox p")
+    
+    // Get the value from the input field
+    let username = document.getElementById('username').value;
+    let password= document.getElementById('password').value;
+    
+    // Create an object with the input value to send
+      if(username != "" && password != ""){
+          let data = {
+            "username": username,
+            "password": password
+          };
+          
+          // Send the data to the backend using fetch (for example, a POST request)
+          fetch('http://localhost:3000/login', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+            })
+              .then((response) => response.text())
+              .then((text) => {
+                error.innerHTML = text;
+                if(error.innerHTML == `Welcome player!! ${data.username}`){
+                  error.style.color = "#0f0";
+                  error.style.textShadow = "0 0 10px #0f0";
+                }
+                setTimeout(()=>{
+                  error.innerHTML = "";
+                  error.style.color = "red";
+                  error.style.textShadow = "0 0 10px red";
+                }, 5000)
+              })
+              .catch(error => console.error('Error:', error));
+      }else {
+        error.innerHTML = "All feilds are required";
+        setTimeout(() =>{
+            error.innerHTML = "";
+          }, 3000)
+      };
+    };
+  </script>
+</body>
+</html>

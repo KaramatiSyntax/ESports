@@ -1,0 +1,16 @@
+{
+  "name": "home",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "vinayak": "/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  }
+}

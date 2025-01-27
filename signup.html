@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>signup</title>
+</head>
+<body>
+  <section> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> 
+
+   <div class="signin">  
+    <div class="content"> 
+      <h2>Sign Up</h2> 
+      
+      <div class="form">
+        <div class="inputBox"> 
+          <input id="username" type="text" required> 
+          <i>Username</i> 
+        </div>
+      
+        <div class="inputBox"> 
+          <input id="password" type="password" required> 
+          <i>Password</i>
+          <img src="Assets/eye.png" alt="hide">
+          <div id="strength"></div>
+        </div>
+        
+        <div class="inputBox"> 
+          <input id="Verify" type="text" required> 
+          <i>Verify password</i> 
+        </div> 
+      
+      <div class="links">
+        <a href="#"></a> 
+        <a href="/login.html">Login</a> 
+      </div>
+      
+      <div class="inputBox"> 
+        <p></p>
+        <input onclick="Submit()" type="submit" value="Sign Up"> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </section>
+
+  <script>
+    let passwordFeild = document.getElementById("password");
+    let displayer = document.getElementById("strength");
+    let hider = document.querySelector(".inputBox img") 
+    
+    hider.onclick = function(){
+      if(hider.alt == "hide"){
+          hider.src = "Assets/view.png";
+          hider.alt = "unhide"
+          passwordFeild.type = "text";
+      }else{
+          hider.src = "Assets/eye.png";
+          hider.alt = "hide"
+          passwordFeild.type = "password";
+      }
+    }
+    
+    passwordFeild.onfocus = function(){
+      displayer.style.width = "100%";
+    }
+    
+    function strength(password){
+      let i = 0;
+      if(password.length > 6){
+        i++;
+      }
+      if(password.length >= 10){
+        i++;
+      }
+      if(/[A-Z]/.test(password)){
+        i++;
+      }
+      if(/[0-9]/.test(password)){
+        i++;
+      }
+      if(/[ `!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/.test(password)){
+        i++;
+      }
+      return i;
+    }
+    
+    passwordFeild.onkeyup = function(){
+      let pass = passwordFeild.value
+      
+      let strengthV = strength(pass);
+      if(strengthV <= 2){
+        displayer.classList.add("weak");
+        displayer.classList.remove("medium");
+        displayer.classList.remove("strong");
+      } else if(strengthV >= 2 && strengthV <= 4){
+        displayer.classList.remove("weak");
+        displayer.classList.add("medium");
+        displayer.classList.remove("strong");
+      } else{
+        displayer.classList.remove("weak");
+        displayer.classList.remove("medium");
+        displayer.classList.add("strong");
+      }
+    }
+  
+    passwordFeild.onblur = function(){
+      displayer.style.width = "0";
+    }
+
+    function Submit() {
+    let error = document.querySelector(".inputBox p")
+    
+    if(displayer.classList != "weak"){
+    // Get the value from the input field
+    let username
+    let password
+    
+    if(document.getElementById('password').value == document.getElementById('Verify').value){
+        username = document.getElementById('username').value;
+        password = document.getElementById('password').value;
+            // Create an object with the input value to send
+            if(username != "" && password != ""){
+              let data = {
+                "username": username,
+                "password": password
+              };
+              
+              // Send the data to the backend using fetch (for example, a POST request)
+              fetch('http://localhost:3000/signup', {
+                method: 'POST',
+                headers: {
+                'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+              })
+              .then((response) => response.text())
+              .then((text) => {
+                error.innerHTML = text;
+              if(error.innerHTML == `Welcome player!! ${data.username}`){
+                error.style.color = "#0f0";
+                error.style.textShadow = "0 0 10px #0f0";
+              }
+              setTimeout(()=>{
+                error.innerHTML = "";
+                error.style.color = "red";
+                error.style.textShadow = "0 0 10px red";
+                }, 5000)
+              })
+              .catch(error => console.error('Error:', error));
+            }else{
+              error.innerHTML = "All feilds are required";
+              setTimeout(() =>{
+                error.innerHTML = "";
+              }, 3000)
+            };
+    }else{
+       error.innerHTML = "Please Verify your Password"
+       setTimeout(()=>{
+         error.innerHTML = ""
+       }, 3000)
+     };
+    }else{
+      error.innerHTML = "Your Password is too weak"
+       setTimeout(()=>{
+         error.innerHTML = ""
+       }, 3000)
+    };
+};
+  </script>
+</body>
+</html>

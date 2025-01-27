@@ -1,0 +1,172 @@
+0 verbose cli /data/data/com.termux/files/usr/bin/node /data/data/com.termux/files/usr/bin/npm
+1 info using npm@10.9.2
+2 info using node@v23.6.1
+3 silly config load:file:/data/data/com.termux/files/usr/lib/node_modules/npm/npmrc
+4 silly config load:file:/data/data/com.termux/files/home/.npmrc
+5 silly config load:file:/data/data/com.termux/files/usr/etc/npmrc
+6 verbose title npm i acodex-server
+7 verbose argv "i" "--global" "acodex-server"
+8 verbose logfile logs-max:10 dir:/data/data/com.termux/files/home/.npm/_logs/2025-01-22T18_05_44_353Z-
+9 verbose logfile /data/data/com.termux/files/home/.npm/_logs/2025-01-22T18_05_44_353Z-debug-0.log
+10 silly packumentCache heap:1098907648 maxSize:274726912 maxEntrySize:137363456
+11 silly logfile done cleaning log files
+12 silly idealTree buildDeps
+13 silly fetch manifest acodex-server@*
+14 silly packumentCache full:https://registry.npmjs.org/acodex-server cache-miss
+15 http fetch GET 200 https://registry.npmjs.org/acodex-server 1367ms (cache updated)
+16 silly packumentCache full:https://registry.npmjs.org/acodex-server set size:undefined disposed:false
+17 silly placeDep ROOT acodex-server@1.1.7 OK for:  want: *
+18 silly fetch manifest @hono/node-server@^1.12.2
+19 silly packumentCache full:https://registry.npmjs.org/@hono%2fnode-server cache-miss
+20 silly fetch manifest @xterm/addon-serialize@^0.13.0
+21 silly packumentCache full:https://registry.npmjs.org/@xterm%2faddon-serialize cache-miss
+22 silly fetch manifest @xterm/headless@^5.5.0
+23 silly packumentCache full:https://registry.npmjs.org/@xterm%2fheadless cache-miss
+24 silly fetch manifest @xterm/xterm@^5.5.0
+25 silly packumentCache full:https://registry.npmjs.org/@xterm%2fxterm cache-miss
+26 silly fetch manifest commander@^11.1.0
+27 silly packumentCache full:https://registry.npmjs.org/commander cache-miss
+28 http fetch GET 200 https://registry.npmjs.org/commander 215ms (cache updated)
+29 silly packumentCache full:https://registry.npmjs.org/commander set size:undefined disposed:false
+30 silly fetch manifest hono@^3.12.12
+31 silly packumentCache full:https://registry.npmjs.org/hono cache-miss
+32 http fetch GET 200 https://registry.npmjs.org/hono 385ms (cache updated)
+33 silly packumentCache full:https://registry.npmjs.org/hono set size:undefined disposed:false
+34 silly fetch manifest node-pty@^1.0.0
+35 silly packumentCache full:https://registry.npmjs.org/node-pty cache-miss
+36 http fetch GET 200 https://registry.npmjs.org/node-pty 1009ms (cache updated)
+37 silly packumentCache full:https://registry.npmjs.org/node-pty set size:undefined disposed:false
+38 silly fetch manifest ws@^8.18.0
+39 silly packumentCache full:https://registry.npmjs.org/ws cache-miss
+40 http fetch GET 200 https://registry.npmjs.org/ws 99ms (cache updated)
+41 silly packumentCache full:https://registry.npmjs.org/ws set size:undefined disposed:false
+42 http fetch GET 200 https://registry.npmjs.org/@hono%2fnode-server 2154ms (cache updated)
+43 silly packumentCache full:https://registry.npmjs.org/@hono%2fnode-server set size:undefined disposed:false
+44 http fetch GET 200 https://registry.npmjs.org/@xterm%2fheadless 2252ms (cache updated)
+45 silly packumentCache full:https://registry.npmjs.org/@xterm%2fheadless set size:undefined disposed:false
+46 http fetch GET 200 https://registry.npmjs.org/@xterm%2faddon-serialize 2371ms (cache updated)
+47 silly packumentCache full:https://registry.npmjs.org/@xterm%2faddon-serialize set size:undefined disposed:false
+48 http fetch GET 200 https://registry.npmjs.org/@xterm%2fxterm 2393ms (cache updated)
+49 silly packumentCache full:https://registry.npmjs.org/@xterm%2fxterm set size:undefined disposed:false
+50 silly fetch manifest hono@^4
+51 silly packumentCache full:https://registry.npmjs.org/hono cache-miss
+52 http cache https://registry.npmjs.org/hono 89ms (cache hit)
+53 silly packumentCache full:https://registry.npmjs.org/hono set size:4155874 disposed:false
+54 silly fetch manifest bufferutil@^4.0.1
+55 silly packumentCache full:https://registry.npmjs.org/bufferutil cache-miss
+56 http fetch GET 200 https://registry.npmjs.org/bufferutil 107ms (cache updated)
+57 silly packumentCache full:https://registry.npmjs.org/bufferutil set size:undefined disposed:false
+58 silly fetch manifest utf-8-validate@>=5.0.2
+59 silly packumentCache full:https://registry.npmjs.org/utf-8-validate cache-miss
+60 http fetch GET 200 https://registry.npmjs.org/utf-8-validate 90ms (cache updated)
+61 silly packumentCache full:https://registry.npmjs.org/utf-8-validate set size:undefined disposed:false
+62 silly placeDep node_modules/acodex-server @hono/node-server@1.13.7 OK for: acodex-server@1.1.7 want: ^1.12.2
+63 silly placeDep node_modules/acodex-server @xterm/addon-serialize@0.13.0 OK for: acodex-server@1.1.7 want: ^0.13.0
+64 silly placeDep node_modules/acodex-server @xterm/xterm@5.5.0 OK for: @xterm/addon-serialize@0.13.0 want: ^5.0.0
+65 silly placeDep node_modules/acodex-server @xterm/headless@5.5.0 OK for: acodex-server@1.1.7 want: ^5.5.0
+66 silly placeDep node_modules/acodex-server commander@11.1.0 OK for: acodex-server@1.1.7 want: ^11.1.0
+67 silly placeDep node_modules/acodex-server hono@3.12.12 OK for: acodex-server@1.1.7 want: ^3.12.12
+68 silly placeDep node_modules/acodex-server node-pty@1.0.0 OK for: acodex-server@1.1.7 want: ^1.0.0
+69 silly placeDep node_modules/acodex-server ws@8.18.0 OK for: acodex-server@1.1.7 want: ^8.18.0
+70 silly fetch manifest nan@^2.17.0
+71 silly packumentCache full:https://registry.npmjs.org/nan cache-miss
+72 http fetch GET 200 https://registry.npmjs.org/nan 384ms (cache updated)
+73 silly packumentCache full:https://registry.npmjs.org/nan set size:undefined disposed:false
+74 warn ERESOLVE overriding peer dependency {
+74 warn ERESOLVE   code: 'ERESOLVE',
+74 warn ERESOLVE   edge: {
+74 warn ERESOLVE     type: 'peer',
+74 warn ERESOLVE     name: 'hono',
+74 warn ERESOLVE     spec: '^4',
+74 warn ERESOLVE     error: 'INVALID',
+74 warn ERESOLVE     from: {
+74 warn ERESOLVE       name: '@hono/node-server',
+74 warn ERESOLVE       version: '1.13.7',
+74 warn ERESOLVE       location: 'node_modules/acodex-server/node_modules/@hono/node-server',
+74 warn ERESOLVE       isWorkspace: false,
+74 warn ERESOLVE       dependents: [Array]
+74 warn ERESOLVE     }
+74 warn ERESOLVE   },
+74 warn ERESOLVE   dep: {
+74 warn ERESOLVE     name: 'hono',
+74 warn ERESOLVE     version: '4.6.17',
+74 warn ERESOLVE     whileInstalling: {
+74 warn ERESOLVE       name: '@hono/node-server',
+74 warn ERESOLVE       version: '1.13.7',
+74 warn ERESOLVE       path: '/data/data/com.termux/files/usr/lib/node_modules/acodex-server/node_modules/@hono/node-server'
+74 warn ERESOLVE     },
+74 warn ERESOLVE     location: 'node_modules/hono',
+74 warn ERESOLVE     isWorkspace: false,
+74 warn ERESOLVE     dependents: [ [Object] ]
+74 warn ERESOLVE   },
+74 warn ERESOLVE   force: false,
+74 warn ERESOLVE   isMine: false,
+74 warn ERESOLVE   strictPeerDeps: false,
+74 warn ERESOLVE   current: {
+74 warn ERESOLVE     name: 'hono',
+74 warn ERESOLVE     version: '3.12.12',
+74 warn ERESOLVE     location: 'node_modules/acodex-server/node_modules/hono',
+74 warn ERESOLVE     isWorkspace: false,
+74 warn ERESOLVE     dependents: [ [Object] ]
+74 warn ERESOLVE   },
+74 warn ERESOLVE   peerConflict: {
+74 warn ERESOLVE     current: {
+74 warn ERESOLVE       name: 'hono',
+74 warn ERESOLVE       version: '3.12.12',
+74 warn ERESOLVE       location: 'node_modules/acodex-server/node_modules/hono',
+74 warn ERESOLVE       isWorkspace: false,
+74 warn ERESOLVE       dependents: [Array]
+74 warn ERESOLVE     },
+74 warn ERESOLVE     peer: {
+74 warn ERESOLVE       name: 'hono',
+74 warn ERESOLVE       version: '4.6.17',
+74 warn ERESOLVE       whileInstalling: [Object],
+74 warn ERESOLVE       location: 'node_modules/hono',
+74 warn ERESOLVE       isWorkspace: false,
+74 warn ERESOLVE       dependents: [Array]
+74 warn ERESOLVE     }
+74 warn ERESOLVE   }
+74 warn ERESOLVE }
+75 silly placeDep node_modules/acodex-server nan@2.22.0 OK for: node-pty@1.0.0 want: ^2.17.0
+76 silly reify moves {}
+77 http cache nan@https://registry.npmjs.org/nan/-/nan-2.22.0.tgz 0ms (cache hit)
+78 http cache ws@https://registry.npmjs.org/ws/-/ws-8.18.0.tgz 0ms (cache hit)
+79 http cache node-pty@https://registry.npmjs.org/node-pty/-/node-pty-1.0.0.tgz 1ms (cache hit)
+80 http cache hono@https://registry.npmjs.org/hono/-/hono-3.12.12.tgz 0ms (cache hit)
+81 http cache commander@https://registry.npmjs.org/commander/-/commander-11.1.0.tgz 0ms (cache hit)
+82 http cache @xterm/headless@https://registry.npmjs.org/@xterm/headless/-/headless-5.5.0.tgz 0ms (cache hit)
+83 http cache @xterm/xterm@https://registry.npmjs.org/@xterm/xterm/-/xterm-5.5.0.tgz 0ms (cache hit)
+84 http cache @xterm/addon-serialize@https://registry.npmjs.org/@xterm/addon-serialize/-/addon-serialize-0.13.0.tgz 0ms (cache hit)
+85 http cache acodex-server@https://registry.npmjs.org/acodex-server/-/acodex-server-1.1.7.tgz 0ms (cache hit)
+86 http cache @hono/node-server@https://registry.npmjs.org/@hono/node-server/-/node-server-1.13.7.tgz 0ms (cache hit)
+87 info run node-pty@1.0.0 install node_modules/acodex-server/node_modules/node-pty node-gyp rebuild
+88 info run node-pty@1.0.0 install { code: 1, signal: null }
+89 verbose stack Error: command failed
+89 verbose stack     at promiseSpawn (/data/data/com.termux/files/usr/lib/node_modules/npm/node_modules/@npmcli/promise-spawn/lib/index.js:22:22)
+89 verbose stack     at spawnWithShell (/data/data/com.termux/files/usr/lib/node_modules/npm/node_modules/@npmcli/promise-spawn/lib/index.js:124:10)
+89 verbose stack     at promiseSpawn (/data/data/com.termux/files/usr/lib/node_modules/npm/node_modules/@npmcli/promise-spawn/lib/index.js:12:12)
+89 verbose stack     at runScriptPkg (/data/data/com.termux/files/usr/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/run-script-pkg.js:77:13)
+89 verbose stack     at runScript (/data/data/com.termux/files/usr/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/run-script.js:9:12)
+89 verbose stack     at /data/data/com.termux/files/usr/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/rebuild.js:329:17
+89 verbose stack     at run (/data/data/com.termux/files/usr/lib/node_modules/npm/node_modules/promise-call-limit/dist/commonjs/index.js:67:22)
+89 verbose stack     at /data/data/com.termux/files/usr/lib/node_modules/npm/node_modules/promise-call-limit/dist/commonjs/index.js:84:9
+89 verbose stack     at new Promise (<anonymous>)
+89 verbose stack     at callLimit (/data/data/com.termux/files/usr/lib/node_modules/npm/node_modules/promise-call-limit/dist/commonjs/index.js:35:69)
+90 verbose pkgid node-pty@1.0.0
+91 error code 1
+92 error path /data/data/com.termux/files/usr/lib/node_modules/acodex-server/node_modules/node-pty
+93 error command failed
+94 error command sh -c node-gyp rebuild
+95 silly unfinished npm timer reify 1737569145547
+96 silly unfinished npm timer reify:build 1737569150957
+97 silly unfinished npm timer build 1737569150957
+98 silly unfinished npm timer build:deps 1737569150958
+99 silly unfinished npm timer build:run:install 1737569150964
+100 silly unfinished npm timer build:run:install:node_modules/acodex-server/node_modules/node-pty 1737569150964
+101 verbose cwd /data/data/com.termux/files/home
+102 verbose os Linux 5.15.123-android13-8-00044-g5682afbff3e0-ab11501453
+103 verbose node v23.6.1
+104 verbose npm  v10.9.2
+105 verbose exit 1
+106 verbose code 1
+107 error A complete log of this run can be found in: /data/data/com.termux/files/home/.npm/_logs/2025-01-22T18_05_44_353Z-debug-0.log

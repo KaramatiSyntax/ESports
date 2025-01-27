@@ -1,0 +1,31 @@
+0 verbose cli /data/data/com.termux/files/usr/bin/node /data/data/com.termux/files/usr/bin/npm
+1 info using npm@10.9.2
+2 info using node@v23.6.1
+3 silly config load:file:/data/data/com.termux/files/usr/lib/node_modules/npm/npmrc
+4 silly config load:file:/data/data/com.termux/files/home/.npmrc
+5 silly config load:file:/data/data/com.termux/files/usr/etc/npmrc
+6 verbose title npm v
+7 verbose argv "v"
+8 verbose logfile logs-max:10 dir:/data/data/com.termux/files/home/.npm/_logs/2025-01-22T17_51_47_246Z-
+9 verbose logfile /data/data/com.termux/files/home/.npm/_logs/2025-01-22T17_51_47_246Z-debug-0.log
+10 silly logfile done cleaning log files
+11 verbose stack Error: ENOENT: no such file or directory, open '/data/data/com.termux/files/home/package.json'
+11 verbose stack     at async open (node:internal/fs/promises:639:25)
+11 verbose stack     at async readFile (node:internal/fs/promises:1243:14)
+11 verbose stack     at async View.exec (/data/data/com.termux/files/usr/lib/node_modules/npm/lib/commands/view.js:62:24)
+11 verbose stack     at async Npm.exec (/data/data/com.termux/files/usr/lib/node_modules/npm/lib/npm.js:207:9)
+11 verbose stack     at async module.exports (/data/data/com.termux/files/usr/lib/node_modules/npm/lib/cli/entry.js:67:5)
+12 error code ENOENT
+13 error syscall open
+14 error path /data/data/com.termux/files/home/package.json
+15 error errno -2
+16 error enoent ENOENT: no such file or directory, open '/data/data/com.termux/files/home/package.json'
+17 error enoent This is related to npm not being able to find a file.
+17 error enoent
+18 verbose cwd /data/data/com.termux/files/home
+19 verbose os Linux 5.15.123-android13-8-00044-g5682afbff3e0-ab11501453
+20 verbose node v23.6.1
+21 verbose npm  v10.9.2
+22 verbose exit -2
+23 verbose code -2
+24 error A complete log of this run can be found in: /data/data/com.termux/files/home/.npm/_logs/2025-01-22T17_51_47_246Z-debug-0.log

@@ -1,0 +1,111 @@
+0 verbose cli /data/data/com.termux/files/usr/bin/node /data/data/com.termux/files/usr/bin/npm
+1 info using npm@10.9.2
+2 info using node@v23.6.1
+3 silly config load:file:/data/data/com.termux/files/usr/lib/node_modules/npm/npmrc
+4 silly config load:file:/data/data/com.termux/files/home/.npmrc
+5 silly config load:file:/data/data/com.termux/files/usr/etc/npmrc
+6 verbose title npm i cors
+7 verbose argv "i" "cors"
+8 verbose logfile logs-max:10 dir:/data/data/com.termux/files/home/.npm/_logs/2025-01-24T03_25_34_229Z-
+9 verbose logfile /data/data/com.termux/files/home/.npm/_logs/2025-01-24T03_25_34_229Z-debug-0.log
+10 silly logfile done cleaning log files
+11 silly packumentCache heap:1098907648 maxSize:274726912 maxEntrySize:137363456
+12 silly idealTree buildDeps
+13 silly fetch manifest cors@*
+14 silly packumentCache full:https://registry.npmjs.org/cors cache-miss
+15 http fetch GET 200 https://registry.npmjs.org/cors 636ms (cache miss)
+16 silly packumentCache full:https://registry.npmjs.org/cors set size:undefined disposed:false
+17 silly placeDep ROOT cors@2.8.5 OK for: home@1.0.0 want: *
+18 silly fetch manifest object-assign@^4
+19 silly packumentCache full:https://registry.npmjs.org/object-assign cache-miss
+20 http fetch GET 200 https://registry.npmjs.org/object-assign 143ms (cache miss)
+21 silly packumentCache full:https://registry.npmjs.org/object-assign set size:undefined disposed:false
+22 silly placeDep ROOT object-assign@4.1.1 OK for: cors@2.8.5 want: ^4
+23 silly reify moves {}
+24 silly audit bulk request {
+24 silly audit   accepts: [ '1.3.8' ],
+24 silly audit   'array-flatten': [ '1.1.1' ],
+24 silly audit   'body-parser': [ '1.20.3' ],
+24 silly audit   bytes: [ '3.1.2' ],
+24 silly audit   'call-bind-apply-helpers': [ '1.0.1' ],
+24 silly audit   'call-bound': [ '1.0.3' ],
+24 silly audit   'content-disposition': [ '0.5.4' ],
+24 silly audit   'content-type': [ '1.0.5' ],
+24 silly audit   cookie: [ '0.7.1' ],
+24 silly audit   'cookie-signature': [ '1.0.6' ],
+24 silly audit   debug: [ '2.6.9' ],
+24 silly audit   depd: [ '2.0.0' ],
+24 silly audit   destroy: [ '1.2.0' ],
+24 silly audit   'dunder-proto': [ '1.0.1' ],
+24 silly audit   'ee-first': [ '1.1.1' ],
+24 silly audit   encodeurl: [ '2.0.0', '1.0.2' ],
+24 silly audit   'es-define-property': [ '1.0.1' ],
+24 silly audit   'es-errors': [ '1.3.0' ],
+24 silly audit   'es-object-atoms': [ '1.1.1' ],
+24 silly audit   'escape-html': [ '1.0.3' ],
+24 silly audit   etag: [ '1.8.1' ],
+24 silly audit   express: [ '4.21.2' ],
+24 silly audit   finalhandler: [ '1.3.1' ],
+24 silly audit   forwarded: [ '0.2.0' ],
+24 silly audit   fresh: [ '0.5.2' ],
+24 silly audit   'function-bind': [ '1.1.2' ],
+24 silly audit   'get-intrinsic': [ '1.2.7' ],
+24 silly audit   'get-proto': [ '1.0.1' ],
+24 silly audit   gopd: [ '1.2.0' ],
+24 silly audit   'has-symbols': [ '1.1.0' ],
+24 silly audit   hasown: [ '2.0.2' ],
+24 silly audit   'http-errors': [ '2.0.0' ],
+24 silly audit   'iconv-lite': [ '0.4.24' ],
+24 silly audit   inherits: [ '2.0.4' ],
+24 silly audit   'ipaddr.js': [ '1.9.1' ],
+24 silly audit   'math-intrinsics': [ '1.1.0' ],
+24 silly audit   'media-typer': [ '0.3.0' ],
+24 silly audit   'merge-descriptors': [ '1.0.3' ],
+24 silly audit   methods: [ '1.1.2' ],
+24 silly audit   mime: [ '1.6.0' ],
+24 silly audit   'mime-db': [ '1.52.0' ],
+24 silly audit   'mime-types': [ '2.1.35' ],
+24 silly audit   ms: [ '2.0.0', '2.1.3' ],
+24 silly audit   negotiator: [ '0.6.3' ],
+24 silly audit   'object-inspect': [ '1.13.3' ],
+24 silly audit   'on-finished': [ '2.4.1' ],
+24 silly audit   parseurl: [ '1.3.3' ],
+24 silly audit   'path-to-regexp': [ '0.1.12' ],
+24 silly audit   'proxy-addr': [ '2.0.7' ],
+24 silly audit   qs: [ '6.13.0' ],
+24 silly audit   'range-parser': [ '1.2.1' ],
+24 silly audit   'raw-body': [ '2.5.2' ],
+24 silly audit   'safe-buffer': [ '5.2.1' ],
+24 silly audit   'safer-buffer': [ '2.1.2' ],
+24 silly audit   send: [ '0.19.0' ],
+24 silly audit   'serve-static': [ '1.16.2' ],
+24 silly audit   setprototypeof: [ '1.2.0' ],
+24 silly audit   'side-channel': [ '1.1.0' ],
+24 silly audit   'side-channel-list': [ '1.0.0' ],
+24 silly audit   'side-channel-map': [ '1.0.1' ],
+24 silly audit   'side-channel-weakmap': [ '1.0.2' ],
+24 silly audit   statuses: [ '2.0.1' ],
+24 silly audit   toidentifier: [ '1.0.1' ],
+24 silly audit   'type-is': [ '1.6.18' ],
+24 silly audit   unpipe: [ '1.0.0' ],
+24 silly audit   'utils-merge': [ '1.0.1' ],
+24 silly audit   vary: [ '1.1.2' ],
+24 silly audit   cors: [ '2.8.5' ],
+24 silly audit   'object-assign': [ '4.1.1' ]
+24 silly audit }
+25 http cache object-assign@https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz 0ms (cache hit)
+26 http cache cors@https://registry.npmjs.org/cors/-/cors-2.8.5.tgz 0ms (cache hit)
+27 silly tarball no local data for object-assign@https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz. Extracting by manifest.
+28 silly tarball no local data for cors@https://registry.npmjs.org/cors/-/cors-2.8.5.tgz. Extracting by manifest.
+29 http fetch GET 200 https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz 213ms (cache miss)
+30 http fetch GET 200 https://registry.npmjs.org/cors/-/cors-2.8.5.tgz 212ms (cache miss)
+31 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 421ms
+32 silly audit report {}
+33 silly ADD node_modules/object-assign
+34 silly ADD node_modules/cors
+35 verbose cwd /data/data/com.termux/files/home
+36 verbose os Linux 5.15.123-android13-8-00044-g5682afbff3e0-ab11501453
+37 verbose node v23.6.1
+38 verbose npm  v10.9.2
+39 verbose exit 0
+40 info ok

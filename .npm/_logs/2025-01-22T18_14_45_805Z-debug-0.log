@@ -1,0 +1,27 @@
+0 verbose cli /data/data/com.termux/files/usr/bin/node /data/data/com.termux/files/usr/bin/npm
+1 info using npm@10.9.2
+2 info using node@v23.6.1
+3 silly config load:file:/data/data/com.termux/files/usr/lib/node_modules/npm/npmrc
+4 silly config load:file:/data/data/com.termux/files/home/.npmrc
+5 silly config load:file:/data/data/com.termux/files/usr/etc/npmrc
+6 verbose title npm init
+7 verbose argv "init" "--yes"
+8 verbose logfile logs-max:10 dir:/data/data/com.termux/files/home/.npm/_logs/2025-01-22T18_14_45_805Z-
+9 verbose logfile /data/data/com.termux/files/home/.npm/_logs/2025-01-22T18_14_45_805Z-debug-0.log
+10 silly logfile done cleaning log files
+11 silly package data {
+11 silly package data   name: 'home',
+11 silly package data   version: '1.0.0',
+11 silly package data   main: 'index.js',
+11 silly package data   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+11 silly package data   keywords: [],
+11 silly package data   author: '',
+11 silly package data   license: 'ISC',
+11 silly package data   description: ''
+11 silly package data }
+12 verbose cwd /data/data/com.termux/files/home
+13 verbose os Linux 5.15.123-android13-8-00044-g5682afbff3e0-ab11501453
+14 verbose node v23.6.1
+15 verbose npm  v10.9.2
+16 verbose exit 0
+17 info ok
