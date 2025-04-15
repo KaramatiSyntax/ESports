@@ -1,0 +1,53 @@
+div.container {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 999;
+  backdrop-filter: blur(10px);
+  transition: opacity 0.5s ease-in-out;
+  animation: Fade-Out 1s ease-in-out 1s;
+  opacity: 0;
+}
+
+@keyframes Fade-Out {
+  from {
+    opacity: 1;
+    filter: blur(0);
+    transform: translate(0);
+  }
+  to {
+    opacity: 0;
+    filter: blur(10px);
+    transform: translate(0, 100px);
+  }
+}
+
+div.container div.text {
+  display: flex;
+  color: white;
+  align-items: center;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+
+div.container div.text span {
+  color: cyan;
+  margin-left: 10px;
+  filter: drop-shadow(0 0 10px cyan);
+  filter: drop-shadow(0 0 10px cyan);
+}
+
+.imageStyle {
+  filter: drop-shadow(0 0 50px cyan);
+  transition: filter 0.3s ease-in-out;
+}
+
+.imageStyle:hover {
+  filter: drop-shadow(0 0 20px cyan);
+}
