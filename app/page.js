@@ -156,8 +156,8 @@ export default function Home() {
     <>
       <Intro />
       <div className={styles.hero}>
-        <div className={styles.imageWrapper}>
-          <Image src="/bg.jpeg" alt="Turrani Esports" width={0} height={0} style={{ width: "100%", height: "auto" }} />
+        <div className={styles.imageWrapper}
+           <Image src="/bg.jpeg" alt="Turrani Esports" layout="fill" objectFit="cover" />
         </div>
         <div className={styles.heading}>
           <div>
