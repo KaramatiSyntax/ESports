@@ -70,7 +70,7 @@ export default function PaymentPopup({ onClose }) {
 
     // Upload the screenshot to the server
     const formData = new FormData();
-    formData.append("file", screenshot, existing.teamName);
+    formData.append("file", screenshot);
 
     const uploadRes = await fetch("/api/upload-screenshot", {
       method: "POST",
