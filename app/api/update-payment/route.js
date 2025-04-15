@@ -18,7 +18,7 @@ export async function POST(request) {
     try {
       await fs.access(filePath);
     } catch {
-      set new error = "No, such file/Dir Found!"
+      console.error("No, such file/Dir Found!");
       return;
     }
 
